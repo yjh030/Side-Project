@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>女性專區 | SoleStride 極步 - 專屬優雅與舒適鞋履</title>
+  <meta name="description" content="瀏覽 SoleStride 極步女性專區，探索厚底帆布鞋、避震慢跑鞋、尖頭平底鞋與復古穆勒鞋，為女孩們量身打造的高質感日常穿搭指南。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="SoleStride Logo" class="logo-img">
+        <span class="logo-text">Sole<span>Stride</span></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="about.html">公司簡介</a></li>
+          <li><a href="women.html" class="active">女性專區</a></li>
+          <li><a href="men.html">男性專區</a></li>
+          <li><a href="canvas.html">布鞋</a></li>
+          <li><a href="casual.html">休閒鞋</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="cart-toggle" class="cart-icon-btn" aria-label="購物車">
+          <svg class="cart-svg" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0-3h10.13c.75 0 1.41-.41 1.75-1.03l3.58-6.47A1.002 1.002 0 0 0 21.58 6H5.21l-.94-2H1v2h2l3.6 7.59l-1.35 2.45c-.16.28-.25.61-.25.96a2 2 0 0 0 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">首頁</a><span>/</span>女性專區
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-results">
+          顯示 <strong>女性專區</strong> 與 <strong>男女通用</strong> 鞋款
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <label for="product-sort" style="font-size: 14px; font-weight: 600; color: var(--text-dark);">排序方式：</label>
+          <select id="product-sort" class="sort-select">
+            <option value="popular">熱門推薦</option>
+            <option value="price-low">價格：由低到高</option>
+            <option value="price-high">價格：由高到低</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Grid container with filters -->
+      <div id="product-grid" class="products-grid-container" data-gender="women" data-style="all">
+        <!-- Products dynamically rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section class="newsletter-section">
+    <div class="container newsletter-grid">
+      <div>
+        <h2 class="newsletter-title">訂閱電子報獲得最新發售資訊</h2>
+        <p class="newsletter-desc">現在訂閱即可享首單 9 折優惠券，以及 VIP 專屬新品搶先預購權。</p>
+      </div>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('感謝訂閱！折扣碼已發送至您的信箱。'); this.reset();">
+        <input type="email" placeholder="輸入您的電子郵件地址" required>
+        <button type="submit" class="btn btn-accent">訂閱</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SoleStride 極步</h3>
+        <p>我們相信，一雙好鞋能帶你走向最美的地方。SoleStride 專注於提供高品質、高舒適度且極具現代美學的男女布鞋與休閒皮鞋。</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>熱門類別</h4>
+        <ul>
+          <li><a href="women.html">女性專區</a></li>
+          <li><a href="men.html">男性專區</a></li>
+          <li><a href="canvas.html">休閒帆布鞋</a></li>
+          <li><a href="casual.html">復古紳士皮鞋</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>關於我們</h4>
+        <ul>
+          <li><a href="about.html">品牌故事</a></li>
+          <li><a href="about.html">設計理念</a></li>
+          <li><a href="contact.html">實體門市資訊</a></li>
+          <li><a href="contact.html">線上聯絡客服</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>聯絡管道</h4>
+        <ul style="color: #64748b;">
+          <li>服務電話: 02-2345-6789</li>
+          <li>服務時間: 週一至週五 09:00 - 18:00</li>
+          <li>客服信箱: service@solestride.com</li>
+          <li>台北市信義區信義路五段 7 號</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SoleStride 極步股份有限公司. 版權所有.</p>
+      <p>設計項目：網路行銷 SEO 期末專題報告</p>
+    </div>
+  </footer>
+
+  <!-- Off-Canvas Shopping Cart Drawer -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <h2>您的購物車 (<span class="cart-count">0</span>)</h2>
+      <button id="cart-close" class="cart-close-btn" aria-label="關閉">&times;</button>
+    </div>
+    <div id="cart-items-container" class="cart-items-container">
+      <!-- Cart items dynamic render -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>小計金額</span>
+        <span id="cart-total-amount" class="total-amount">NT$ 0</span>
+      </div>
+      <button id="cart-checkout-btn" class="btn btn-primary">前往結帳</button>
+    </div>
+  </div>
+
+  <!-- Javascript Modules -->
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
